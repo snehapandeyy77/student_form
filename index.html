@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__left">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <div class="logo__icon">S</div>
+                <span class="logo__text">SecureBank</span>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <a href="#" class="nav-link active">Dashboard</a>
+            <a href="#" class="nav-link">Accounts</a>
+            <a href="#" class="nav-link">Transfers</a>
+            <a href="#" class="nav-link">Cards</a>
+            <a href="#" class="nav-link">Settings</a>
+        </nav>
+        <div class="header__profile">
+            <div class="profile">
+                <div class="profile__avatar">S</div>
+                <div class="profile__info">
+                    <span class="profile__name">Sarah Johnson</span>
+                    <span class="profile__status">Member since 2019</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__link active">
+                    <div class="sidebar__icon">📊</div>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="sidebar__link">
+                    <div class="sidebar__icon">🏦</div>
+                    <span>Accounts</span>
+                </a>
+                <a href="#" class="sidebar__link">
+                    <div class="sidebar__icon">💸</div>
+                    <span>Transfers</span>
+                </a>
+                <a href="#" class="sidebar__link">
+                    <div class="sidebar__icon">💳</div>
+                    <span>Cards</span>
+                </a>
+                <a href="#" class="sidebar__link">
+                    <div class="sidebar__icon">⚙️</div>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome">
+                <h1>Welcome back, Sarah!</h1>
+                <p>Here's what's happening with your money today.</p>
+            </section>
+
+            <!-- Account Cards -->
+            <section class="accounts">
+                <h2>My Accounts</h2>
+                <div class="account-cards">
+                    <div class="account-card account-card--blue">
+                        <div class="account-card__header">
+                            <h3>Checking</h3>
+                            <span class="account-number">****1234</span>
+                        </div>
+                        <div class="account-card__balance">
+                            <span class="currency">$</span>
+                            <span class="amount">5,234.50</span>
+                        </div>
+                        <div class="account-card__footer">
+                            <span class="account-type">Primary Account</span>
+                        </div>
+                    </div>
+                    
+                    <div class="account-card account-card--green">
+                        <div class="account-card__header">
+                            <h3>Savings</h3>
+                            <span class="account-number">****5678</span>
+                        </div>
+                        <div class="account-card__balance">
+                            <span class="currency">$</span>
+                            <span class="amount">18,947.23</span>
+                        </div>
+                        <div class="account-card__footer">
+                            <span class="account-type">High Yield Savings</span>
+                        </div>
+                    </div>
+                    
+                    <div class="account-card account-card--orange">
+                        <div class="account-card__header">
+                            <h3>Credit Card</h3>
+                            <span class="account-number">****9012</span>
+                        </div>
+                        <div class="account-card__balance">
+                            <span class="currency">-$</span>
+                            <span class="amount">892.10</span>
+                        </div>
+                        <div class="account-card__footer">
+                            <span class="account-type">Available: $4,107.90</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <button class="btn btn--primary action-btn">
+                        <div class="action-btn__icon">💸</div>
+                        <span>Transfer Money</span>
+                    </button>
+                    <button class="btn btn--secondary action-btn">
+                        <div class="action-btn__icon">💰</div>
+                        <span>Pay Bills</span>
+                    </button>
+                    <button class="btn btn--secondary action-btn">
+                        <div class="action-btn__icon">💳</div>
+                        <span>Deposit Check</span>
+                    </button>
+                    <button class="btn btn--secondary action-btn">
+                        <div class="action-btn__icon">📊</div>
+                        <span>View Reports</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Transaction History -->
+            <section class="transactions">
+                <div class="section-header">
+                    <h2>Recent Transactions</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction__icon transaction__icon--shopping">🛒</div>
+                        <div class="transaction__details">
+                            <div class="transaction__merchant">Amazon</div>
+                            <div class="transaction__date">Today • Shopping</div>
+                        </div>
+                        <div class="transaction__amount transaction__amount--debit">-$67.99</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction__icon transaction__icon--coffee">☕</div>
+                        <div class="transaction__details">
+                            <div class="transaction__merchant">Starbucks</div>
+                            <div class="transaction__date">Today • Food</div>
+                        </div>
+                        <div class="transaction__amount transaction__amount--debit">-$4.95</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction__icon transaction__icon--income">💼</div>
+                        <div class="transaction__details">
+                            <div class="transaction__merchant">Salary Deposit</div>
+                            <div class="transaction__date">Yesterday • Income</div>
+                        </div>
+                        <div class="transaction__amount transaction__amount--credit">+$3,500.00</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction__icon transaction__icon--home">🏠</div>
+                        <div class="transaction__details">
+                            <div class="transaction__merchant">Rent Payment</div>
+                            <div class="transaction__date">2 days ago • Bills</div>
+                        </div>
+                        <div class="transaction__amount transaction__amount--debit">-$1,200.00</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction__icon transaction__icon--car">🚗</div>
+                        <div class="transaction__details">
+                            <div class="transaction__merchant">Gas Station</div>
+                            <div class="transaction__date">3 days ago • Transport</div>
+                        </div>
+                        <div class="transaction__amount transaction__amount--debit">-$45.20</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- Quick Transfer -->
+            <section class="quick-transfer">
+                <h3>Quick Transfer</h3>
+                <div class="transfer-contacts">
+                    <div class="contact-item">
+                        <div class="contact__avatar">J</div>
+                        <div class="contact__info">
+                            <div class="contact__name">John Doe</div>
+                            <div class="contact__last">Last: $150</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact__avatar">E</div>
+                        <div class="contact__info">
+                            <div class="contact__name">Emma Smith</div>
+                            <div class="contact__last">Last: $75</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact__avatar">M</div>
+                        <div class="contact__info">
+                            <div class="contact__name">Mike Johnson</div>
+                            <div class="contact__last">Last: $200</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="notifications">
+                <h3>Recent Notifications</h3>
+                <div class="notification-list">
+                    <div class="notification-item notification--success">
+                        <div class="notification__content">
+                            <h4>Payment Received</h4>
+                            <p>Your salary has been deposited</p>
+                            <span class="notification__time">2 hours ago</span>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item notification--info">
+                        <div class="notification__content">
+                            <h4>Card Payment</h4>
+                            <p>Payment of $67.99 at Amazon</p>
+                            <span class="notification__time">4 hours ago</span>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item notification--warning">
+                        <div class="notification__content">
+                            <h4>Low Balance Alert</h4>
+                            <p>Checking account below $1000</p>
+                            <span class="notification__time">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
